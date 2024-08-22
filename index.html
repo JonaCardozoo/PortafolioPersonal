@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Responsive.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Jonatan Cardozo</title>
 </head>
+
 <body>
-    
+
     <div class="container">
+
+
         <header class="header">
             <nav class="nav">
                 <a href="#">Inicio</a>
@@ -17,63 +23,76 @@
                 <a href="#Proyectos">Proyectos</a>
                 <a href="#Contacto">Contacto</a>
             </nav>
-        </header>      
-            <div id="sobreMi" class="main_container">
-                <img class="img_header" src="images/img_header.jpg" alt="">
-                <h1>Hola, <span>soy Jonatan Cardozo</span></h1>
-                <p id="animated-text">Actualmente estudio la Tenicatura en Programación en la UTN. Mi objetivo es convertirme en programador fullstack, combinando habilidades de frontend y backend. Me apasiona aprender nuevas tecnologías y aplicar mis conocimientos en proyectos que me desafíen y me hagan crecer como profesional.</p>
-                <div class="icons">
-                    <a target="_blank" href="https://www.linkedin.com/in/jonatan-cardozo-420571244/"><img src="images/icon_linkedin.svg" alt=""></a>
-                    <a target="_blank" href="https://www.instagram.com/jonacardozo185/"><img src="images/icon_instagram.svg" alt=""></a>
-                    <a target="_blank" href="https://github.com/JonaCardozoo"><img src="images/icon_github.svg" alt=""></a>
+        </header>
+        <div id="sobreMi" class="main_container">
+            <img class="img_header" src="images/img_header.jpg" alt="">
+            <h1>Hola, <span>soy Jonatan Cardozo</span></h1>
+            <p id="animated-text">Actualmente estudio la Tenicatura en Programación en la UTN. Mi objetivo es
+                convertirme en programador fullstack, combinando habilidades de frontend y backend. Me apasiona aprender
+                nuevas tecnologías y aplicar mis conocimientos en proyectos que me desafíen y me hagan crecer como
+                profesional.</p>
+            <div class="icons">
+                <a target="_blank" href="https://www.linkedin.com/in/jonatan-cardozo-420571244/"><img
+                        src="images/icon_linkedin.svg" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/jonacardozo185/"><img src="images/icon_instagram.svg"
+                        alt=""></a>
+                <a target="_blank" href="https://github.com/JonaCardozoo"><img src="images/icon_github.svg" alt=""></a>
+            </div>
+            <div class="button_container">
+                <a target="_blank" href="https://wa.link/nhep5f">Contactame</a>
+            </div>
+        </div>
+        <div class="container_flecha">
+            <span class="material-symbols-outlined" id="flecha">
+                arrow_downward
+            </span>
+        </div>
+        
+        <span id="text_Proyects">Proyectos</span>
+        <div id="Proyectos" class="card_container">
+            <div class="card">
+                <div class="card_content">
+                    <video class="mi-video" muted src="images/videoPagina.mp4"></video>
+                    <h3>Pagina web acesorias</h3>
+                    <p>Landing Page creada para mostrar acesorias</p>
+                    <a target="_blank" href="https://github.com/JonaCardozoo/JuliFitWeb" class="btn">Ir al
+                        repositorio</a>
                 </div>
+            </div>
+            <div class="card">
+                <div class="card_content">
 
-                <div class="button_container">
-                    <a target="_blank" href="https://wa.link/nhep5f">Contactame</a>
+                    <video class="mi-video" muted src="images/videoPagina2.mp4"></video>
+                    <h3>Sistema de ventas</h3>
+                    <p>Creado como proyecto personal 100% con c#</p>
+                    <a target="_blank" href="https://github.com/JonaCardozoo/SistemaDeVenta" class="btn">Ir al
+                        repositorio</a>
                 </div>
-            </div> 
-                <span id="text_Proyects">Proyectos</span>
-                <div id="Proyectos" class="card_container">
-                    <div class="card">
-                        <div class="card_content">
-                            <video class="mi-video" muted src="images/videoPagina.mp4"></video>
-                            <h3>Pagina web acesorias</h3>
-                            <p>Landing Page creada para mostrar acesorias</p>
-                            <a target="_blank" href="https://github.com/JonaCardozoo/JuliFitWeb" class="btn">Ir al repositorio</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card_content">
-                            
-                            <video class="mi-video" muted src="images/videoPagina2.mp4"></video>
-                            <h3>Sistema de ventas</h3>
-                            <p>Creado como proyecto personal 100% con c#</p>
-                            <a target="_blank" href="https://github.com/JonaCardozoo/SistemaDeVenta" class="btn">Ir al repositorio</a>
-                        </div>
-                    </div>
-                    
-                </div>
-              
-            
-            <footer class="footer_container">
-                <p>©2024 Jonatan Cardozo. Todos los derechos reservados</p>
-                
-            </footer>
+            </div>
+
+        </div>
+
+
+        <footer class="footer_container">
+            <p>©2024 Jonatan Cardozo. Todos los derechos reservados</p>
+
+        </footer>
     </div>
 
     <script>
         const videos = document.querySelectorAll('.mi-video');
 
         videos.forEach(video => {
-            video.addEventListener('mouseenter', function() {
+            video.addEventListener('mouseenter', function () {
                 this.play();
+            });
+
+            video.addEventListener('mouseleave', function () {
+                this.pause();
+                this.currentTime = 0;
+            });
         });
-        
-        video.addEventListener('mouseleave', function() {
-            this.pause();
-            this.currentTime = 0;
-        });
-        });
-        </script>
+    </script>
 </body>
+
 </html>
