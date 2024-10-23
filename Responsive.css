@@ -6,6 +6,20 @@
   
   @media (width <=768px){
     
+
+    .footer_container{
+      margin-top: 90%;
+    }
+
+    .card_container{
+      margin-top: 90%;
+      
+    }
+
+    .card{
+     min-height: 90%;
+    }
+    
     .main_container{
         padding: 10px;
         text-align: center;
