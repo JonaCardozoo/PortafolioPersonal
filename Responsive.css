@@ -1,31 +1,31 @@
-@media (width <=1100px){
-    .card_container{
-      flex-direction: column;
-    }
+@media (width <=768px) {
+
+  .footer_container {
+    margin-top: 200%;
   }
-  
-  @media (width <=768px){
-    
 
-    .footer_container{
-      margin-top: 90%;
-    }
+  .card_container {
 
-    .card_container{
-      margin-top: 90%;
-      
-    }
-
-    .card{
-     min-height: 90%;
-    }
-    
-    .main_container{
-        padding: 10px;
-        text-align: center;
-    }
-
-    .main_container p{
-      width: 100%;
-    }
+    flex-direction: column;
+    margin-top: 150%;
   }
+
+  .card {
+    min-height: 90%;
+  }
+
+  .main_container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .main_container p {
+    width: 100%;
+  }
+
+  #flecha {
+    margin: 30px;
+  }
+
+
+}
